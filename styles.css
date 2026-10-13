@@ -606,6 +606,63 @@ button {
   font-weight: 600;
 }
 
+.section-story {
+  background: var(--surface);
+  max-width: none;
+  padding: 88px 24px;
+}
+
+.section-story .section-head,
+.section-story .story-grid {
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.hf-card {
+  padding: 28px;
+}
+
+.hf-card h3 {
+  font-size: 24px;
+}
+
+.hf-card .btn {
+  margin-top: 20px;
+}
+
+.tweet-embed {
+  display: flex;
+  justify-content: center;
+  min-height: 320px;
+}
+
+.tweet-embed blockquote.twitter-tweet {
+  margin: 0;
+  max-width: 550px;
+  width: 100%;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 24px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--ink);
+  white-space: pre-wrap;
+}
+
+.tweet-embed blockquote.twitter-tweet a {
+  color: #1d9bf0;
+  font-weight: 600;
+}
+
 .join-panel {
   background: var(--neon);
   color: var(--black);
@@ -703,7 +760,8 @@ button {
 @media (max-width: 960px) {
   .hero-grid,
   .about-layout,
-  .steps {
+  .steps,
+  .story-grid {
     grid-template-columns: 1fr;
   }
 
